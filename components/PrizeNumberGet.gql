@@ -1,0 +1,7 @@
+#import "./PrizeNumber.gql"
+
+mutation getNumberMutation($type: Int) {
+  getPrizeNumbersMutate(type: $type) {
+    ...prizeNumberFragment
+  }
+}

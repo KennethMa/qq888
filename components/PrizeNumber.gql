@@ -1,0 +1,4 @@
+fragment prizeNumberFragment on PrizeNumberType {
+  type
+  numbers
+}

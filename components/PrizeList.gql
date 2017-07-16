@@ -1,0 +1,12 @@
+#import "./PrizeNumber.gql"
+query getPrize {
+  prize {
+    id
+    displayId
+    endTime
+    prizePool
+    prizeNumber {
+      ...prizeNumberFragment
+    }
+  }
+}

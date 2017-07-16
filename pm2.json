@@ -1,0 +1,16 @@
+{
+  "apps": [{
+    "name": "qq888",
+    "script": "server.js",
+    "cwd": "/data/qq888",
+    "instances" : 0,
+    "exec_mode": "cluster",
+    "max_memory_restart": "1G",
+    "autorestart": true,
+    "node_args": [],
+    "args": [],
+    "env": {
+      "NODE_ENV": "production"
+    }
+  }]
+}
