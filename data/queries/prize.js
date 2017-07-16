@@ -1,6 +1,26 @@
 const uuidv1 = require('uuid/v1')
-const PrizeType = require('../types/PrizeType')
+const graphql = require('graphql')
+// const PrizeType = require('../types/PrizeType')
 const randomIntFromInterval = require('../../lib/util').randomIntFromInterval
+const PrizeNumberType = require('../types/prizeNumberType')
+const {
+  GraphQLID: ID,
+  GraphQLInt: IntType,
+  GraphQLString: StringType,
+  GraphQLObjectType: ObjectType,
+} = graphql
+
+const PrizeType = new ObjectType({
+  name: 'Prize',
+  description: '菠菜查询',
+  fields: {
+    id: { type: ID },
+    displayId: { type: IntType },
+    endTime: { type: StringType },
+    prizePool: { type: IntType },
+    prizeNumber: { type: PrizeNumberType },
+  },
+});
 
 const prize = {
   type: PrizeType,
