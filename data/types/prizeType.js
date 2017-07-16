@@ -3,7 +3,7 @@ const PrizeNumberType = require('./prizeNumberType')
 const {
   GraphQLID: ID,
   GraphQLInt: IntType,
-  GraphQLString: StringType
+  GraphQLString: StringType,
   GraphQLObjectType: ObjectType,
 } = graphql
 
