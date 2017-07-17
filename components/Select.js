@@ -14,7 +14,7 @@ export const StyledSelect = styled.select`
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: inherit;
+  font-size: 0.375rem;
   height: 0.8281rem;
   -webkit-box-pack: start;
   -ms-flex-pack: start;

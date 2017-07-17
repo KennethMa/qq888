@@ -39,7 +39,11 @@ function PrizeList ({ data: { loading, error, prize }, onRefresh}) {
 }
 
 export default compose(
-  graphql(PrizeListQuery),
+  graphql(PrizeListQuery, {
+    options: () => ({
+      fetchPolicy: 'network-only',
+    }),
+  }),
   graphql(GetNumberMutation, {
     props: ({ ownProps, mutate }) => ({
       onRefresh: type => mutate({ variables: { type } }),

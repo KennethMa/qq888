@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js"
+    "start": "NODE_ENV=production node server.js",
+    "postinstall": "rimraf node_modules/react-apollo/node_modules/react-dom"
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.1.5",

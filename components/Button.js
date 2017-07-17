@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 export default styled.button`
+  text-align: center;
   -moz-appearance: none;
   -webkit-appearance: none;
   -webkit-box-align: center;
@@ -14,9 +15,6 @@ export default styled.button`
   display: -ms-inline-flexbox;
   display: inline-flex;
   font-size: inherit;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
   line-height: 1.5;
   padding-bottom: calc(0.375em - 1px);
   padding-left: calc(0.625em - 1px);
@@ -33,7 +31,6 @@ export default styled.button`
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  text-align: center;
   white-space: nowrap;
   width: ${props => props.refresh || props.primary ? '100%' : 'auto'};
   height: ${props => props.refresh ? '100%' : '0.875rem'};

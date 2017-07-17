@@ -45,6 +45,7 @@ export default ({ data, onRefresh }) => (
         border-radius: 50%;
         line-height: 0.7813rem;
         font-size: 15px;
+        color: #fff;
       }
 
       .item_numlist-item:not(:first-child) {

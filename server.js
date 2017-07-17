@@ -10,20 +10,20 @@ const handle = app.getRequestHandler()
 
 app.prepare()
 .then(() => {
-  const app = express()
+  const server = express()
 
-  app.use('/graphql', expressGraphQL(req => ({
+  server.use('/graphql', expressGraphQL(req => ({
     schema,
     graphiql: dev,
     rootValue: { request: req },
     pretty: dev,
   })));
 
-  app.get('*', (req, res) => {
+  server.get('*', (req, res) => {
     return handle(req, res)
   })
 
-  app.listen(3000, (err) => {
+  server.listen(3000, (err) => {
     if (err) throw err
     console.log('> Ready on http://localhost:3000')
   })
