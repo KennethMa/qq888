@@ -5,15 +5,9 @@ export default styled.button`
   text-align: center;
   -moz-appearance: none;
   -webkit-appearance: none;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   border-radius: 0.125rem;
   -webkit-box-shadow: none;
   box-shadow: none;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   font-size: inherit;
   line-height: 1.5;
   padding-bottom: calc(0.375em - 1px);
@@ -28,9 +22,6 @@ export default styled.button`
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   white-space: nowrap;
   width: ${props => props.refresh || props.primary ? '100%' : 'auto'};
   height: ${props => props.refresh ? '100%' : '0.875rem'};
