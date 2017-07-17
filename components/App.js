@@ -68,7 +68,7 @@ export default ({ children }) => (
 
       .bg-primary-transparent {
         background-color: #fff;
-        color: #f2514a;
+        color: #f2514a !important;
         border: 1px solid #f2514a;
       }
 
